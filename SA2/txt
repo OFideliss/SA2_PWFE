@@ -1,0 +1,77 @@
+<div class="container-fluid">
+        <div class="row">
+            <div class="offset-5 col">
+                <div class="img2">
+                    <img src="img/ybxlO.jpg" alt="Imagem 1" usemap="#image-map">
+                    <map name="image-map">
+                        <area target="" alt="" title="" href=""
+                            coords="136,91,130,36,82,26,31,43,29,88,55,138,57,159,68,181,98,181,112,159" shape="poly">
+                    </map>
+                    <img src="img/apagada.jpg" alt="Imagem 2" usemap="#image-map">
+                    <map name="image-map">
+                        <area target="" alt="" title="" href=""
+                            coords="30,77,42,115,58,164,106,163,115,125,140,82,128,44,105,32,85,30,62,34,48,44,37,56"
+                            shape="poly">
+                    </map>
+                    <img src="img/quebrada.jpg" alt="Imagem 3" usemap="#image-map">
+
+                    <map name="image-map">
+                        <area target="" alt="" title="" href="" coords="110,29,145,55,99,201,65,190,24,84,27,53,53,30"
+                            shape="poly">
+
+                    </map>
+                </div>
+                <div class="acao">
+                    <div class="image-caption">AÇÃO 1</div>
+                    <button class="action-button" onclick="mostrarImagem(1)">LIGAR</button>
+                    <div class="image-caption">AÇÃO 2</div>
+                    <button class="action-button" onclick="mostrarImagem(2)">DESLIGAR</button>
+                    <div class="image-caption">AÇÃO 3</div>
+                    <button >AÇÃO 3</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        function trocarImagem() {
+            minhaImagem.src = "img/ybxlO";
+          }
+          document.getElementById("meu-botao").addEventListener("click", trocarImagem);
+
+
+
+          
+     Estilize a imagem com um posicionamento relativo
+     .img2 {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Estilize a imagem */
+    #minhaImagem {
+        display: none; /* Inicialmente, oculte todas as imagens */
+        max-width: 100%;
+        height: auto;
+    }
+    #minhaImagem{
+        display: none; /* Inicialmente, oculte todas as imagens */
+        max-width: 100%;
+        height: auto;
+    }
+    #minhaImagem{
+        display: none; /* Inicialmente, oculte todas as imagens */
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Estilize o botão */
+    .action-button, #trocar-button {
+        cursor: pointer;
+    }
+
+    /* Estilize o texto abaixo da imagem */
+    .image-caption {
+        text-align: center;
+        display: block; /* Inicialmente, oculte todos os textos */
+    }
