@@ -11,25 +11,25 @@ function acender() {
     if (lampadaAcesa == false) {
         // Se a lâmpada não estiver acesa, a imagem da lâmpada é trocada para uma imagem acesa
         lampadaAcesa = true;
-        lampada.src = "img/ybxlO.jpg";
+        lampada.src = "img/ybxlO.png";
         cont++;
 
         // Se a lâmpada for acesa mais de 5 vezes, ela é quebrada
         if (cont > 5) {
-            lampada.src = "img/quebrada.jpg";
+            lampada.src = "img/quebrada.png";
             lampadaOk = false;
         }
     } else if (lampadaOk) {
         // Se a lâmpada estiver acesa, a imagem  é trocada para apagada
         lampadaAcesa = false;
-        lampada.src = "img/apagada.jpg";
+        lampada.src = "img/apagada.png";
     }
 }
 
 // Função que reseta o estado da lâmpada
 function trocar() {
     cont = 0;
-    lampada.src = "img/apagada.jpg";
+    lampada.src = "img/apagada.png";
     lampadaOk = true;
     lampadaAcesa = false;
 }

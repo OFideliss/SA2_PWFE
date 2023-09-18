@@ -70,4 +70,7 @@ body{
         display: none;
     }
 }
+#row1{
+margin-top: -150px;
+}
 

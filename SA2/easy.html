@@ -12,11 +12,37 @@
 </head>
 
 <body>
-    <!-- Barra de navegação -->
-    <nav class="navbar navbar-expand-lg"
-        style="background: rgb(162, 165, 3); background: linear-gradient(180deg, rgb(226, 168, 168) 0%, rgba(138, 255, 200, 0) 100%);">
-        <!-- ... Conteúdo da barra de navegação ... -->
-    </nav>
+    <nav class="navbar navbar-expand-lg " style="background: rgb(162, 165, 3);
+    background: linear-gradient(180deg, rgb(226, 168, 168) 0%, rgba(138, 255, 200, 0) 100%);">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="App.html">Hidden brand</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="App.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="easy.html">EASY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="medium.html">MEDIUM</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="hard.html">HARD</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control lg-5" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
     <!-- Pular linha para dexar um visual melhor -->
     <br><br><br>
@@ -26,8 +52,8 @@
     <!-- Container para centralizar o conteudo-->
     <div class="container-fluid">
         <div class="row">
-            <div class="offset-5 col-3">
-                <h2>CLIQUE NA LAMPADA</h2>
+            <div class=" offset-5 col-11">
+                <h2>CLIQUE NA LAMPADA </h2>
                 <br>
             </div>
         </div>
@@ -35,7 +61,9 @@
             <div class="offset-5 col">
                 <div class="img2">
 
-                    <img src="img/apagada.jpg" alt="Imagem 1" usemap="#image-map" id="minhaImagem">
+                    <img src="img/apagada.png" alt="Imagem 1" usemap="#image-map" id="minhaImagem">
+                   
+                    
                 </div>
                 <br>
                 <!-- Botão para trocar a imagem da lâmpada -->
